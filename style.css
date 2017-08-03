@@ -75,8 +75,8 @@ header {
 }
 
 .button:active {
-  background-color: #e0e0dc;
-  color: #1a1919;
+  background-color: #2c2733;
+  color: #e2e1de;
 }
 
 .buttonb {
@@ -87,8 +87,8 @@ header {
   cursor: pointer;
   cursor: hand;
   outline: none;
-  color: #00e0be;
-  background-color: #e2e1de;
+  background-color: #00e0be;
+  color: #e2e1de;
   border: none;
   width: 78vh;
   height: 4vh;
@@ -101,7 +101,7 @@ header {
 
 .buttonb:active {
   background-color: #00e0be;
-  color: #1a1919;
+  color: #e2e1de;
 }
 
 .buttonc {
@@ -112,8 +112,8 @@ header {
   cursor: pointer;
   cursor: hand;
   outline: none;
-  color: #ff0066;
-  background-color: #e2e1de;
+  color: #e2e1de;
+  background-color: #ff0066;
   border: none;
   width: 78vh;
   height: 4vh;

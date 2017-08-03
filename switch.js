@@ -89,11 +89,13 @@ let text = document.getElementById('switcher'),
     replaceRus = text => text.split("").map(char => rusDict[char] || char).join(""),
 
     copied = () => {
-      document.getElementById('button').value = 'COPIED'
-      document.getElementById('switcher').value.match(/[а-я]/gi) ? document.getElementById('button').classList.add('buttonc') : document.getElementById('button').classList.add('buttonb')
-      setTimeout(function(){ document.getElementById('button').value = 'DECODE'
-      document.getElementById("button").classList.remove('buttonc', 'buttonb');
-      }, 800)
+      const b = document.getElementById('button'),
+            s = document.getElementById('switcher')
+      b.value = 'COPIED'
+      s.value.match(/[а-я]/gi) ? b.classList.add('buttonc') : b.classList.add('buttonb')
+      setTimeout(function(){ b.value = 'DECODE'
+      b.classList.remove('buttonc', 'buttonb');
+      }, 600)
     }
 
     copy = () => {
@@ -107,3 +109,5 @@ let text = document.getElementById('switcher'),
       copy();
       return text = document.getElementById('switcher').value
     }
+
+document.addEventListener('keydown', event => event.keyCode==13&&18 ? switcher(text) : false)
