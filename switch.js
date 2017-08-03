@@ -84,14 +84,10 @@ let text = document.getElementById('switcher'),
 
     update = textarea => text = textarea.value,
 
-    replaceEng = text => text.split("")
-                             .map(char => engDict[char] || char)
-                             .join(""),
+    replaceEng = text => text.split("").map(char => engDict[char] || char).join(""),
 
-    replaceRus = text => text.split("")
-                             .map(char => rusDict[char] || char)
-                             .join(""),
-    
+    replaceRus = text => text.split("").map(char => rusDict[char] || char).join(""),
+
     copied = () => {
       document.getElementById('button').value = 'COPIED'
       document.getElementById('button').classList.add('buttonc');
