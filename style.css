@@ -39,6 +39,21 @@ header {
     max-width: 75%
 }
 
+.i {  
+  color: #ff0066;
+  position: relative;
+  font-weight: 900;
+  font-size: 3rem;
+  float: left;
+  align-items: left;
+  bottom: 14px;
+}
+.i:before {
+  content: ".";
+  position: absolute; 
+  color: #00e0be;
+}
+
 .button {
   text-align: center;
   align-self: center;
@@ -61,6 +76,31 @@ header {
 
 .button:active {
   background-color: #e0e0dc;
+  color: #1a1919;
+}
+
+.buttonb {
+  text-align: center;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  cursor: hand;
+  outline: none;
+  color: #00e0be;
+  background-color: #e2e1de;
+  border: none;
+  width: 78vh;
+  height: 4vh;
+}
+
+.buttonb:hover {
+  background-color: #00e0be;
+  color: #e2e1de;
+}
+
+.buttonb:active {
+  background-color: #00e0be;
   color: #1a1919;
 }
 

@@ -90,9 +90,9 @@ let text = document.getElementById('switcher'),
 
     copied = () => {
       document.getElementById('button').value = 'COPIED'
-      document.getElementById('button').classList.add('buttonc');
+      document.getElementById('switcher').value.match(/[а-я]/gi) ? document.getElementById('button').classList.add('buttonc') : document.getElementById('button').classList.add('buttonb')
       setTimeout(function(){ document.getElementById('button').value = 'DECODE'
-      document.getElementById("button").classList.remove('buttonc');
+      document.getElementById("button").classList.remove('buttonc', 'buttonb');
       }, 800)
     }
 
