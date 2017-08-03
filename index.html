@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en, ru">
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="switch.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE SWITCHER - исправляем ваши ошибки</title>
+</head>
+
+<header>
+    <div class="head">
+        <div class="logo" onmouseover="this.innerHTML='ЕРУ ЫЦШЕСРУК';" onmouseout="this.innerHTML='THE SWITCHER';"><a href="index.html">THE SWITCHER</a></div>
+        <div class="about"><a href=about.html>About</a></div>
+    </div>
+</header>
+
+<body>
+    <div id="status"></div>
+    <textarea id="switcher" oninput="update(this)" type="text" spellcheck="false" autofocus="autofocus" autocomplete="off" rows="1" cols="50" onkeyup="autoGrow(this)" placeholder="PASTE YOUR TEXT HERE"></textarea>
+    <input id="button" class="button" type="button" value="DECODE" onclick="switcher(text)" />
+</body>
+
+</html>

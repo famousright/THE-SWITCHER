@@ -1,0 +1,131 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900";
+
+body {
+    text-align: center;
+    background-color: #e2e1de;
+    color: #1a1919;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+}
+
+a {
+    color: #1a1919;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.head {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: none;
+    float: left;
+    max-width: 75%
+}
+
+.button {
+  text-align: center;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  cursor: hand;
+  outline: none;
+  color: #1a1919;
+  background-color: #e2e1de;
+  border: none;
+  width: 78vh;
+  height: 4vh;
+}
+
+.button:hover {
+  background-color: #1a1919;
+  color: #e2e1de;
+}
+
+.button:active {
+  background-color: #e0e0dc;
+  color: #1a1919;
+}
+
+.buttonc {
+  text-align: center;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  cursor: hand;
+  outline: none;
+  color: #ff0066;
+  background-color: #e2e1de;
+  border: none;
+  width: 78vh;
+  height: 4vh;
+}
+
+.buttonc:hover {
+  background-color: #ff0066;
+  color: #e2e1de;
+}
+
+.buttonc:active {
+  background-color: #ff0066;
+  color: #1a1919;
+}
+
+.about {
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 1rem;
+}
+
+#status {
+    font-weight: 200;
+    font-size: 20px;
+    text-align: left;
+    display: inline-block;
+    position: fixed;
+    top: 35%;
+    left: 0;
+    right: 0;
+    width: 70vh;
+    height: 100px;
+    margin: auto;
+}
+
+#switcher {
+    width: 80vh;
+    color: #1a1919;
+    background: #e0e0dc;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+    display: flex;
+    margin: 10px auto;
+    text-align: left;
+    font-size: 2rem;
+    min-height: 50vh;
+    display: inline-block;
+    font-weight: 100;
+    border-bottom: 1px solid #1a1919;
+    margin-bottom: 0px;
+}
