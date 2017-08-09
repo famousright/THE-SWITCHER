@@ -6,7 +6,6 @@ body {
     color: #1a1919;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    min-height: 90vh;
     flex-direction: column;
 }
 
@@ -26,8 +25,9 @@ header {
 
 .head {
     margin: 0 auto;
-    width: 100%;
-    max-width: 960px
+    width: 80%;
+    max-width: 960px;
+    min-width: 350px;
 }
 
 .logo {
@@ -36,7 +36,7 @@ header {
     font-size: 2rem;
     text-decoration: none;
     float: left;
-    max-width: 75%
+    max-width: 75%;
 }
 
 .i {  
@@ -46,7 +46,7 @@ header {
   font-size: 3rem;
   float: left;
   align-items: left;
-  bottom: 14px;
+  bottom: 0.9rem;
 }
 .i:before {
   content: ".";
@@ -55,9 +55,10 @@ header {
 }
 
 .button {
+  -webkit-appearance: none;
   text-align: center;
   align-self: center;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 900;
   cursor: pointer;
   cursor: hand;
@@ -134,12 +135,12 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     float: right;
-    margin-top: 1rem;
+    margin-top: 0.95rem;
 }
 
 #status {
     font-weight: 200;
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: left;
     display: inline-block;
     position: fixed;
@@ -152,7 +153,8 @@ header {
 }
 
 #switcher {
-    width: 80vh;
+    max-width: 80vh;
+    min-width: auto;
     color: #1a1919;
     background: #e0e0dc;
     border: none;
@@ -164,7 +166,6 @@ header {
     text-align: left;
     font-size: 2rem;
     min-height: 50vh;
-    display: inline-block;
     font-weight: 100;
     border-bottom: 1px solid #1a1919;
     margin-bottom: 0px;

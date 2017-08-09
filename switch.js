@@ -110,5 +110,5 @@ let text = document.getElementById('switcher'),
       return text = document.getElementById('switcher').value
     }
     
-document.addEventListener('keydown', event => (window.event.keyCode===13 || event.which===13) ? window.event.preventDefault() : void 0)
-document.addEventListener('keydown', event => (window.event.keyCode===13 || event.which===13)&& event.altKey ? switcher(text) : void 0)
+document.addEventListener('keydown', event => (window.event.keyCode===13 || event.which===13) && window.event.preventDefault())
+document.addEventListener('keydown', event => (window.event.keyCode===13 || event.which===13)&& event.altKey && switcher(text))
