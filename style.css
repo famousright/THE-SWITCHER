@@ -46,7 +46,7 @@ header {
   font-size: 3rem;
   float: left;
   align-items: left;
-  bottom: 0.9rem;
+  bottom: 0.85rem;
 }
 .i:before {
   content: ".";
